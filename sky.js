@@ -68,7 +68,7 @@ function init() {
     1000
   );
   camera.position.z = 50;
-  //camera.lookAt(0, 0, 0);
+  camera.lookAt(0, 0, 0);
 
   const light = new THREE.DirectionalLight();
   light.intensity = 0.5;
@@ -92,7 +92,7 @@ function onResize() {
 }
 function animate() {
   requestAnimationFrame(animate);
-  camera.lookAt(scene.position);
+  //camera.lookAt(scene.position);
   renderer.render(scene, camera);
 
   stars.forEach((star) => {
